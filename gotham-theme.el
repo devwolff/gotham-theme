@@ -600,7 +600,7 @@ depending on DISPLAY for keys which are either :foreground or
    (diredp-deletion-file-name :background base3)
    (diredp-dir-heading :foreground orange)
    (diredp-dir-name :foreground cyan)
-   (diredp-executable-tag :foreground white)
+   (diredp-executable-tag :foreground yellow)
    (diredp-file-name :foreground base6)
    (diredp-file-suffix :foreground green)
    (diredp-flag-mark :foreground yellow :background blue)
@@ -616,7 +616,7 @@ depending on DISPLAY for keys which are either :foreground or
    (diredp-read-priv :foreground magenta)
    (diredp-write-priv :foreground green)
    (diredp-exec-priv :foreground blue)
-   (diredp-link-priv :foreground navy)
+   (diredp-link-priv :foreground yellow)
    (diredp-rare-priv :foreground base6)
    (diredp-other-priv :foreground base6)
 
@@ -922,7 +922,7 @@ depending on DISPLAY for keys which are either :foreground or
    (org-date :foreground cyan :underline t)
    (org-date-selected :foreground base2 :background magenta)
    (org-document-info :foreground base5)
-   (org-document-title :weight bold)
+   (org-document-title :foreground "DeepSkyBlue1" :weight bold)
    (org-done :foreground green :weight bold)
    (org-drawer :foreground base5)
    (org-ellipsis :inherit shadow :weight bold)
@@ -965,7 +965,7 @@ depending on DISPLAY for keys which are either :foreground or
    (powerline-inactive2 :foreground base4 :background base2)
 
    ;; rainbow-delimiters
-   (rainbow-delimiters-depth-1-face :foreground base6)
+   (rainbow-delimiters-depth-1-face :foreground "DarkMagenta")
    (rainbow-delimiters-depth-2-face :foreground cyan)
    (rainbow-delimiters-depth-3-face :foreground orange)
    (rainbow-delimiters-depth-4-face :foreground magenta)
