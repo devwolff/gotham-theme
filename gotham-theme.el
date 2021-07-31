@@ -71,7 +71,8 @@ customized 16-color palette."
     (violet  "#4e5166" ,(if gotham-tty-256-colors "color-60"  "magenta"))
     (blue    "#195466" ,(if gotham-tty-256-colors "color-24"  "blue"))
     (cyan    "#33859e" ,(if gotham-tty-256-colors "color-44"  "cyan"))
-    (green   "#2aa889" ,(if gotham-tty-256-colors "color-78"  "green")))
+    (green   "#2aa889" ,(if gotham-tty-256-colors "color-78"  "green"))
+    (darkcyan "#008b8b",(if gotham-tty-256-colors "color-89"  "darkcyan")))
   "List of colors the theme consists of.")
 
 (defun gotham-set-faces (faces)
@@ -350,7 +351,7 @@ depending on DISPLAY for keys which are either :foreground or
 
    ;; outline
    (outline-1 :foreground violet)
-   (outline-2 :foreground cyan)
+   (outline-2 :foreground darkcyan)
    (outline-3 :foreground magenta)
    (outline-4 :foreground green)
    (outline-5 :foreground violet)
@@ -599,7 +600,7 @@ depending on DISPLAY for keys which are either :foreground or
    (diredp-deletion-file-name :background base3)
    (diredp-dir-heading :foreground orange)
    (diredp-dir-name :foreground cyan)
-   (diredp-executable-tag :foreground yellow)
+   (diredp-executable-tag :foreground white)
    (diredp-file-name :foreground base6)
    (diredp-file-suffix :foreground green)
    (diredp-flag-mark :foreground yellow :background blue)
@@ -615,7 +616,7 @@ depending on DISPLAY for keys which are either :foreground or
    (diredp-read-priv :foreground magenta)
    (diredp-write-priv :foreground green)
    (diredp-exec-priv :foreground blue)
-   (diredp-link-priv :foreground yellow)
+   (diredp-link-priv :foreground navy)
    (diredp-rare-priv :foreground base6)
    (diredp-other-priv :foreground base6)
 
