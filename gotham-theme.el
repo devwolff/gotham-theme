@@ -69,7 +69,7 @@ customized 16-color palette."
     (yellow  "#edb443" ,(if gotham-tty-256-colors "color-214" "yellow"))
     (magenta "#888ca6" ,(if gotham-tty-256-colors "color-67"  "brightmagenta"))
     (violet  "#4e5166" ,(if gotham-tty-256-colors "color-60"  "magenta"))
-    (blue    "#195466" ,(if gotham-tty-256-colors "color-24"  "blue"))
+    (blue    "#00868b" ,(if gotham-tty-256-colors "color-24"  "blue"))
     (cyan    "#33859e" ,(if gotham-tty-256-colors "color-44"  "cyan"))
     (green   "#2aa889" ,(if gotham-tty-256-colors "color-78"  "green"))
     (darkcyan "#008b8b",(if gotham-tty-256-colors "color-89"  "darkcyan")))
@@ -229,7 +229,6 @@ depending on DISPLAY for keys which are either :foreground or
    ;(ediff-odd-diff-Ancestor)
 
    ;; eldoc
-   (eldoc-highlight-function-argument :foreground orange :weight bold)
 
    ;; eshell
    (eshell-prompt :foreground yellow :weight bold)
@@ -922,7 +921,8 @@ depending on DISPLAY for keys which are either :foreground or
    (org-date :foreground cyan :underline t)
    (org-date-selected :foreground base2 :background magenta)
    (org-document-info :foreground base5)
-   (org-document-title :foreground "DeepSkyBlue1" :weight bold)
+   (org-document-title :foreground "#ff1493" :weight bold :height 1.4)
+   (outline-1 :height 1.1)
    (org-done :foreground green :weight bold)
    (org-drawer :foreground base5)
    (org-ellipsis :inherit shadow :weight bold)
@@ -965,7 +965,7 @@ depending on DISPLAY for keys which are either :foreground or
    (powerline-inactive2 :foreground base4 :background base2)
 
    ;; rainbow-delimiters
-   (rainbow-delimiters-depth-1-face :foreground "DarkMagenta")
+   (rainbow-delimiters-depth-1-face :foreground "#ee00ee")
    (rainbow-delimiters-depth-2-face :foreground cyan)
    (rainbow-delimiters-depth-3-face :foreground orange)
    (rainbow-delimiters-depth-4-face :foreground magenta)
@@ -1079,6 +1079,8 @@ depending on DISPLAY for keys which are either :foreground or
      (add-to-list 'custom-theme-load-path
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
+
+(remove-hook 'dired-mode-hook 'diredfl-mode)
 
 (provide-theme 'gotham)
 
