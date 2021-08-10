@@ -1,15 +1,15 @@
 [[file:img/gotham.png]]
 
+[[./img/jokers.png]]
+
 * About
+
+Welcome to the darkside..
 
    :PROPERTIES:
    :CUSTOM_ID: about
    :END:
-Gotham is a *very dark* Emacs color theme. It's a port of the
-[[https://github.com/whatyouhide/vim-gotham][Gotham theme for Vim]] and tries adhering closely to the original. There is support for both GUI and terminal Emacs. The terminal version assumes that your terminal
-emulator comes with a customized 16-color palette from the
-[[https://github.com/whatyouhide/gotham-contrib][Gotham contrib repository]], however you can enable 256 color support by customizing
-=gotham-tty-extended-palette= in exchange for a negligible amount of color degradation.
+Gotham is a *very dark* Emacs color theme. It's a port of the [[https://github.com/whatyouhide/vim-gotham][Gotham theme for Vim]] and tries adhering closely to the original. There is support for both GUI and terminal Emacs. The terminal version assumes that your terminal emulator comes with a customized 16-color palette from the [[https://github.com/whatyouhide/gotham-contrib][Gotham contrib repository]], however you can enable 256 color support by customizing =gotham-tty-extended-palette= in exchange for a negligible amount of color degradation.
 * Screenshots
 
    :PROPERTIES:
@@ -50,4 +50,12 @@ add the following to your init file:
 
 #+begin_example
 (load-theme 'gotham t)
+#+end_example
+
+To use this fork for [[https://github.com/hlissner/doom-emacs][doom-emacs]], add the following to ~packages.el~:
+
+#+begin_example
+(package! gotham-theme
+  :recipe (:host github
+           :repo "devwolff/gotham-theme"))
 #+end_example
