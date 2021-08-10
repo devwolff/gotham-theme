@@ -67,11 +67,11 @@ customized 16-color palette."
     (base9   "#ff1493")
 
     (red     "#c23127" ,(if gotham-tty-256-colors "color-124" "red"))
-    (orange  "#da70d6" ,(if gotham-tty-256-colors "color-166" "brightred"))
+    (orange  "#cd3700" ,(if gotham-tty-256-colors "color-166" "brightred"))
     (yellow  "#edb443" ,(if gotham-tty-256-colors "color-214" "yellow"))
     (magenta "#888ca6" ,(if gotham-tty-256-colors "color-67"  "brightmagenta"))
     (violet  "#4e5166" ,(if gotham-tty-256-colors "color-60"  "magenta"))
-    (blue    "#00868b" ,(if gotham-tty-256-colors "color-24"  "blue"))
+    (blue    "#5c4de8" ,(if gotham-tty-256-colors "color-24"  "blue"))
     (cyan    "#33859e" ,(if gotham-tty-256-colors "color-44"  "cyan"))
     (green   "#2aa889" ,(if gotham-tty-256-colors "color-78"  "green")))
   "List of colors the theme consists of.")
