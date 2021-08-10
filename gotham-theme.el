@@ -145,7 +145,7 @@ depending on DISPLAY for keys which are either :foreground or
    (font-lock-comment-delimiter-face :foreground base4)
    (font-lock-constant-face :foreground cyan :weight bold)
    (font-lock-doc-face :foreground green)
-   (font-lock-function-name-face :foreground base10)
+   (font-lock-function-name-face :foreground base3)
    (font-lock-keyword-face :foreground blue)
    (font-lock-negation-char-face :foreground red)
    (font-lock-preprocessor-face :foreground red)
