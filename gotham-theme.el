@@ -66,6 +66,7 @@ customized 16-color palette."
     (base8   "#ee00ee")
     (base9   "#ff1493")
     (base10  "#6c3fa1")
+    (base11  "#4e5166")
 
     (red     "#c23127" ,(if gotham-tty-256-colors "color-124" "red"))
     (orange  "#cd3700" ,(if gotham-tty-256-colors "color-166" "brightred"))
@@ -143,7 +144,7 @@ depending on DISPLAY for keys which are either :foreground or
    (font-lock-builtin-face :foreground orange)
    (font-lock-comment-face :foreground base4)
    (font-lock-comment-delimiter-face :foreground base4)
-   (font-lock-constant-face :foreground cyan :weight bold)
+   (font-lock-constant-face :foreground base11 :weight bold)
    (font-lock-doc-face :foreground green)
    (font-lock-function-name-face :foreground base3)
    (font-lock-keyword-face :foreground blue)
@@ -924,7 +925,6 @@ depending on DISPLAY for keys which are either :foreground or
    (org-date-selected :foreground base2 :background magenta)
    (org-document-info :foreground base5)
    (org-document-title :foreground base9 :weight bold :height 1.4)
-   (outline-1 :height 1.1)
    (org-done :foreground green :weight bold)
    (org-drawer :foreground base5)
    (org-ellipsis :inherit shadow :weight bold)
@@ -1072,8 +1072,7 @@ depending on DISPLAY for keys which are either :foreground or
    (undo-tree-visualizer-current-face :foreground orange)
    (undo-tree-visualizer-active-branch-face :foreground unspecified :weight bold)
    (undo-tree-visualizer-register-face :foreground yellow)
-   (undo-tree-visualizer-unmodified-face :foreground cyan)
-   ))
+   (undo-tree-visualizer-unmodified-face :foreground cyan)))
 
 ;;;###autoload
 (and load-file-name
@@ -1081,8 +1080,6 @@ depending on DISPLAY for keys which are either :foreground or
      (add-to-list 'custom-theme-load-path
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
-
-(remove-hook 'dired-mode-hook 'diredfl-mode)
 
 (provide-theme 'gotham)
 
