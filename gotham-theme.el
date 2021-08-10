@@ -57,12 +57,14 @@ customized 16-color palette."
 (defvar gotham-color-alist
   `((base0   "#0c1014" ,(if gotham-tty-256-colors "color-232" "black"))
     (base1   "#11151c" ,(if gotham-tty-256-colors "color-233" "brightblack"))
-    (base2   "#091f2e" ,(if gotham-tty-256-colors "color-17"  "brightgreen"))
+    (base2   "#0c80cf" ,(if gotham-tty-256-colors "color-17"  "brightgreen"))
     (base3   "#0a3749" ,(if gotham-tty-256-colors "color-18"  "brightblue"))
     (base4   "#245361" ,(if gotham-tty-256-colors "color-24"  "brightyellow"))
     (base5   "#599cab" ,(if gotham-tty-256-colors "color-81"  "brightcyan"))
     (base6   "#99d1ce" ,(if gotham-tty-256-colors "color-122" "white"))
     (base7   "#d3ebe9" ,(if gotham-tty-256-colors "color-194" "brightwhite"))
+    (base8   "#ee00ee")
+    (base9   "#ff1493")
 
     (red     "#c23127" ,(if gotham-tty-256-colors "color-124" "red"))
     (orange  "#d26937" ,(if gotham-tty-256-colors "color-166" "brightred"))
@@ -71,8 +73,7 @@ customized 16-color palette."
     (violet  "#4e5166" ,(if gotham-tty-256-colors "color-60"  "magenta"))
     (blue    "#00868b" ,(if gotham-tty-256-colors "color-24"  "blue"))
     (cyan    "#33859e" ,(if gotham-tty-256-colors "color-44"  "cyan"))
-    (green   "#2aa889" ,(if gotham-tty-256-colors "color-78"  "green"))
-    (darkcyan "#008b8b",(if gotham-tty-256-colors "color-89"  "darkcyan")))
+    (green   "#2aa889" ,(if gotham-tty-256-colors "color-78"  "green")))
   "List of colors the theme consists of.")
 
 (defun gotham-set-faces (faces)
@@ -350,7 +351,7 @@ depending on DISPLAY for keys which are either :foreground or
 
    ;; outline
    (outline-1 :foreground violet)
-   (outline-2 :foreground darkcyan)
+   (outline-2 :foreground base8)
    (outline-3 :foreground magenta)
    (outline-4 :foreground green)
    (outline-5 :foreground violet)
@@ -921,7 +922,7 @@ depending on DISPLAY for keys which are either :foreground or
    (org-date :foreground cyan :underline t)
    (org-date-selected :foreground base2 :background magenta)
    (org-document-info :foreground base5)
-   (org-document-title :foreground "#ff1493" :weight bold :height 1.4)
+   (org-document-title :foreground base9 :weight bold :height 1.4)
    (outline-1 :height 1.1)
    (org-done :foreground green :weight bold)
    (org-drawer :foreground base5)
@@ -965,7 +966,7 @@ depending on DISPLAY for keys which are either :foreground or
    (powerline-inactive2 :foreground base4 :background base2)
 
    ;; rainbow-delimiters
-   (rainbow-delimiters-depth-1-face :foreground "#ee00ee")
+   (rainbow-delimiters-depth-1-face :foreground base8)
    (rainbow-delimiters-depth-2-face :foreground cyan)
    (rainbow-delimiters-depth-3-face :foreground orange)
    (rainbow-delimiters-depth-4-face :foreground magenta)
