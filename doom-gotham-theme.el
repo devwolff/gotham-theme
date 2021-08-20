@@ -47,7 +47,7 @@ determine the exact padding."
    (fg-alt     '("#7984D1" "#7984D1" "white"       ))
    (fg         '("#f2f3f7" "#f2f3f7" "brightwhite" ))
 
-   (grey       '("#546A90" "#546A90" "gray"          ))
+   (grey       '("#546A90" "#546A90" "gray"         ))
    (red        '("#c23127" "#e61f44" "red"          ))
    (orange     '("#cf433e" "#ff9b50" "brightred"    ))
    (green      '("#2aa889" "#a7da1e" "green"        ))
@@ -148,6 +148,7 @@ determine the exact padding."
    (markdown-header-face :inherit 'bold :foreground red)
    (markdown-url-face    :foreground teal :weight 'normal)
    (markdown-reference-face :foreground base6)
+   (markdown-comment-face :foreground green)
    ((markdown-bold-face &override)   :foreground fg)
    ((markdown-italic-face &override) :foreground fg-alt)
    ;;;; outline <built-in>
