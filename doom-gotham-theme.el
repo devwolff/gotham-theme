@@ -47,7 +47,7 @@ determine the exact padding."
    (fg-alt     '("#7984D1" "#7984D1" "white"       ))
    (fg         '("#f2f3f7" "#f2f3f7" "brightwhite" ))
 
-   (grey       '("#546A90" "#546A90" "gray"         ))
+   (grey       '("#546A90" "#546A90" "gray"          ))
    (red        '("#c23127" "#e61f44" "red"          ))
    (orange     '("#cf433e" "#ff9b50" "brightred"    ))
    (green      '("#2aa889" "#a7da1e" "green"        ))
@@ -55,19 +55,19 @@ determine the exact padding."
    (yellow     '("#ffd400" "#ffd400" "yellow"       ))
    (blue       '("#1ea8fc" "#1ea8fc" "brightblue"   ))
    (dark-blue  '("#3761a1" "#3F88AD" "blue"         ))
-   (magenta    '("#df6124" "#df6124" "magenta"      ))
+   (magenta    '("#ff2afc" "#ff2afc" "magenta"      ))
    (violet     '("#ee3a8c" "#df85ff" "brightmagenta"))
    (cyan       '("#33859e" "#42c6ff" "brightcyan"   ))
    (dark-cyan  '("#008b8b" "#204052" "cyan"         ))
    (cadet-blue '("#5f9ea0" "#ef9ea0" "brightblue"   ))
    (sky-blue   '("#00b2ee" "#ef9ea0" "blue"         ))
    (deep-blue  '("#4876ff" "#204052" "blue"         ))
-
+   (blood-red  '("#590621" "#590621" "red"          ))
 
    ;; face categories -- required for all themes
    (highlight      blue)
    (vertical-bar   (doom-darken base1 0.5))
-   (selection      sky-blue)
+   (selection      dark-blue)
    (builtin        blue)
    (comments       (if doom-gotham-brighter-comments blue grey))
    (doc-comments   green)
@@ -125,33 +125,32 @@ determine the exact padding."
     :background modeline-bg-inactive :foreground modeline-fg-alt
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive)))
    (mode-line-emphasis :foreground (if -modeline-bright base8 highlight))
-   (mode-line-highlight :background magenta :foreground bg :weight 'bold)
+   (mode-line-highlight :background blood-red :foreground green :weight 'bold)
    (vertical-border :foreground base5)
 
-   ;;;; centaur-tabs
+;;;; centaur-tabs
    (centaur-tabs-active-bar-face :background deep-blue)
    (centaur-tabs-modified-marker-selected :inherit 'centaur-tabs-selected :foreground magenta)
    (centaur-tabs-modified-marker-unselected :inherit 'centaur-tabs-unselected :foreground magenta)
-   ;;;; company
+;;;; company
    (company-tooltip-selection :background dark-cyan)
    (company-tooltip-common    :foreground magenta :distant-foreground base0 :weight 'bold)
-   ;;;; css-mode <built-in> / scss-mode
+;;;; css-mode <built-in> / scss-mode
    (css-proprietary-property :foreground orange)
    (css-property             :foreground green)
    (css-selector             :foreground blue)
-   ;;;; doom-modeline
-   (doom-modeline-bar :background dark-blue)
-   ;;;; elscreen
-   (elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
-   ;;;; markdown-mode
+;;;; doom-modeline
+   (doom-modeline-bar :background blood-red :foreground green)
+;;;; elscreen
+   (elscreen-tab-other-screen-face :background blood-red :foreground green)
+;;;; markdown-mode
    (markdown-markup-face :foreground base5)
    (markdown-header-face :inherit 'bold :foreground red)
    (markdown-url-face    :foreground teal :weight 'normal)
    (markdown-reference-face :foreground base6)
-   (markdown-comment-face :foreground green)
    ((markdown-bold-face &override)   :foreground fg)
    ((markdown-italic-face &override) :foreground fg-alt)
-   ;;;; outline <built-in>
+;;;; outline <built-in>
    ((outline-1 &override) :foreground deep-blue)
    ((outline-2 &override) :foreground sky-blue)
    ((outline-3 &override) :foreground teal)
@@ -160,11 +159,11 @@ determine the exact padding."
    ((outline-6 &override) :foreground (doom-darken teal 0.2))
    ((outline-7 &override) :foreground (doom-darken blue 0.4))
    ((outline-8 &override) :foreground (doom-darken green 0.4))
-   ;;;; org <built-in>
+;;;; org <built-in>
    ((org-block &override) :background base0)
    ((org-block-begin-line &override) :background base0)
    (org-hide              :foreground hidden)
-   ;;;; solaire-mode
+;;;; solaire-mode
    (solaire-mode-line-face
     :inherit 'mode-line
     :background modeline-bg-l
