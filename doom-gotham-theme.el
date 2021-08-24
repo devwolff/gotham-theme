@@ -47,7 +47,7 @@ determine the exact padding."
    (fg-alt     '("#7984D1" "#7984D1" "white"       ))
    (fg         '("#f2f3f7" "#f2f3f7" "brightwhite" ))
 
-   (grey       '("#546A90" "#546A90" "gray"          ))
+   (grey       '("#546A90" "#546A90" "gray"         ))
    (red        '("#c23127" "#e61f44" "red"          ))
    (orange     '("#cf433e" "#ff9b50" "brightred"    ))
    (green      '("#2aa889" "#a7da1e" "green"        ))
@@ -55,7 +55,7 @@ determine the exact padding."
    (yellow     '("#ffd400" "#ffd400" "yellow"       ))
    (blue       '("#1ea8fc" "#1ea8fc" "brightblue"   ))
    (dark-blue  '("#3761a1" "#3F88AD" "blue"         ))
-   (magenta    '("#ff2afc" "#ff2afc" "magenta"      ))
+   (magenta    '("#fd5800" "#fd5800" "magenta"      ))
    (violet     '("#ee3a8c" "#df85ff" "brightmagenta"))
    (cyan       '("#33859e" "#42c6ff" "brightcyan"   ))
    (dark-cyan  '("#008b8b" "#204052" "cyan"         ))
