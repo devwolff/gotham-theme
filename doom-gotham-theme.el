@@ -55,7 +55,7 @@ determine the exact padding."
    (yellow     '("#ffd400" "#ffd400" "yellow"       ))
    (blue       '("#1ea8fc" "#1ea8fc" "brightblue"   ))
    (dark-blue  '("#3761a1" "#3F88AD" "blue"         ))
-   (magenta    '("#ff2afc" "#ff2afc" "magenta"      ))
+   (magenta    '("#df6124" "#df6124" "magenta"      ))
    (violet     '("#ee3a8c" "#df85ff" "brightmagenta"))
    (cyan       '("#33859e" "#42c6ff" "brightcyan"   ))
    (dark-cyan  '("#008b8b" "#204052" "cyan"         ))
@@ -67,7 +67,7 @@ determine the exact padding."
    ;; face categories -- required for all themes
    (highlight      blue)
    (vertical-bar   (doom-darken base1 0.5))
-   (selection      dark-blue)
+   (selection      sky-blue)
    (builtin        blue)
    (comments       (if doom-gotham-brighter-comments blue grey))
    (doc-comments   green)
