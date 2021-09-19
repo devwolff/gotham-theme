@@ -10,21 +10,20 @@ Welcome to the darkside..
    :CUSTOM_ID: about
    :END:
 Gotham is a *very dark* Emacs color theme. It's a port of the [[https://github.com/whatyouhide/vim-gotham][Gotham theme for Vim]] and tries adhering closely to the original. There is support for both GUI and terminal Emacs. The terminal version assumes that your terminal emulator comes with a customized 16-color palette from the [[https://github.com/whatyouhide/gotham-contrib][Gotham contrib repository]], however you can enable 256 color support by customizing =gotham-tty-extended-palette= in exchange for a negligible amount of color degradation.
-* Screenshots
+* ~gotham-theme~ screenshots
 
+[[./img/go.png]]
+
+[[./img/go3.png]]
+
+* ~doom-gotham-theme~ screenshots
    :PROPERTIES:
    :CUSTOM_ID: screenshots
    :END:
-[[file:img/scrot.png]]
 
-Thanks to [[https://github.com/norbertklar][Norbert Klar]] for the
-following three!
+[[./img/1.png]]
 
-[[file:img/go.png]]
-
-[[file:img/go2.png]]
-
-[[file:img/go3.png]]
+[[./img/2.png]]
 
 * Installation
 
