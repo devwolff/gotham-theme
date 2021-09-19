@@ -67,7 +67,7 @@ determine the exact padding."
    ;; face categories -- required for all themes
    (highlight      blue)
    (vertical-bar   (doom-darken base1 0.5))
-   (selection      dark-blue)
+   (selection      blood-red)
    (builtin        blue)
    (comments       (if doom-gotham-brighter-comments blue grey))
    (doc-comments   green)
@@ -80,7 +80,7 @@ determine the exact padding."
    (strings        fg-alt)
    (variables      cadet-blue)
    (numbers        magenta)
-   (region         base1)
+   (region         (doom-darken base3 0.4))
    (error          red)
    (warning        yellow)
    (success        green)
@@ -133,8 +133,9 @@ determine the exact padding."
    (centaur-tabs-modified-marker-selected :inherit 'centaur-tabs-selected :foreground magenta)
    (centaur-tabs-modified-marker-unselected :inherit 'centaur-tabs-unselected :foreground magenta)
 ;;;; company
-   (company-tooltip-selection :background dark-cyan)
-   (company-tooltip-common    :foreground magenta :distant-foreground base0 :weight 'bold)
+   (company-tooltip-selection :background base3)
+   (company-tooltip-search :background deep-blue)
+   (company-tooltip-common :distant-foreground base0 :weight 'bold)
 ;;;; css-mode <built-in> / scss-mode
    (css-proprietary-property :foreground orange)
    (css-property             :foreground green)
