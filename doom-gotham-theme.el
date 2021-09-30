@@ -80,7 +80,7 @@ determine the exact padding."
    (strings        fg-alt)
    (variables      cadet-blue)
    (numbers        magenta)
-   (region         (doom-darken blood-red 0.4))
+   (region         (doom-darken blood-red 0.4)) ;;blue
    (error          red)
    (warning        yellow)
    (success        green)
@@ -160,6 +160,7 @@ determine the exact padding."
    ((outline-6 &override) :foreground (doom-darken teal 0.2))
    ((outline-7 &override) :foreground (doom-darken blue 0.4))
    ((outline-8 &override) :foreground (doom-darken green 0.4))
+   ((markdown-code-face &override) :background (doom-lighten base3 0.05))
 ;;;; org <built-in>
    ((org-block &override) :background base2)
    ((org-block-begin-line &override) :background base2)
