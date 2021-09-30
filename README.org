@@ -24,7 +24,6 @@ Gotham is a *very dark* Emacs color theme. It's a port of the [[https://github.c
 [[./img/1.png]]
 
 [[./img/2.png]]
-
 * Installation
 
    :PROPERTIES:
