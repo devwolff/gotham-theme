@@ -58,22 +58,18 @@ customized 16-color palette."
   `((base0   "#0c1014" ,(if gotham-tty-256-colors "color-232" "black"))
     (base1   "#11151c" ,(if gotham-tty-256-colors "color-233" "brightblack"))
     (base2   "#091f2e" ,(if gotham-tty-256-colors "color-17"  "brightgreen"))
-    (base3   "#1d84ad" ,(if gotham-tty-256-colors "color-18"  "brightblue"))
+    (base3   "#0a3749" ,(if gotham-tty-256-colors "color-18"  "brightblue"))
     (base4   "#245361" ,(if gotham-tty-256-colors "color-24"  "brightyellow"))
     (base5   "#599cab" ,(if gotham-tty-256-colors "color-81"  "brightcyan"))
     (base6   "#99d1ce" ,(if gotham-tty-256-colors "color-122" "white"))
     (base7   "#d3ebe9" ,(if gotham-tty-256-colors "color-194" "brightwhite"))
-    (base8   "#8b538c")
-    (base9   "#ff1493")
-    (base10  "#6c3fa1")
-    (base11  "#4e5166")
 
     (red     "#c23127" ,(if gotham-tty-256-colors "color-124" "red"))
-    (orange  "#ee1289" ,(if gotham-tty-256-colors "color-166" "brightred"))
+    (orange  "#d26937" ,(if gotham-tty-256-colors "color-166" "brightred"))
     (yellow  "#edb443" ,(if gotham-tty-256-colors "color-214" "yellow"))
     (magenta "#888ca6" ,(if gotham-tty-256-colors "color-67"  "brightmagenta"))
     (violet  "#4e5166" ,(if gotham-tty-256-colors "color-60"  "magenta"))
-    (blue    "#3761a1" ,(if gotham-tty-256-colors "color-24"  "blue"))
+    (blue    "#195466" ,(if gotham-tty-256-colors "color-24"  "blue"))
     (cyan    "#33859e" ,(if gotham-tty-256-colors "color-44"  "cyan"))
     (green   "#2aa889" ,(if gotham-tty-256-colors "color-78"  "green")))
   "List of colors the theme consists of.")
@@ -131,7 +127,7 @@ depending on DISPLAY for keys which are either :foreground or
    (link :foreground orange :underline t)
    (link-visited :foreground yellow)
    (cursor :background base6)
-   (region :foreground base8 :background base1)
+   (region :foreground unspecified :background base3)
    (secondary-selection :foreground unspecified :background violet)
    (linum :foreground base4 :background base1)
    (fringe :foreground base6 :background base1)
@@ -144,9 +140,9 @@ depending on DISPLAY for keys which are either :foreground or
    (font-lock-builtin-face :foreground orange)
    (font-lock-comment-face :foreground base4)
    (font-lock-comment-delimiter-face :foreground base4)
-   (font-lock-constant-face :foreground base11 :weight bold)
+   (font-lock-constant-face :foreground cyan :weight bold)
    (font-lock-doc-face :foreground green)
-   (font-lock-function-name-face :foreground base3)
+   (font-lock-function-name-face :foreground base5)
    (font-lock-keyword-face :foreground blue :weight bold)
    (font-lock-negation-char-face :foreground red)
    (font-lock-preprocessor-face :foreground red)
@@ -232,6 +228,7 @@ depending on DISPLAY for keys which are either :foreground or
    ;(ediff-odd-diff-Ancestor)
 
    ;; eldoc
+   (eldoc-highlight-function-argument :foreground orange :weight bold)
 
    ;; eshell
    (eshell-prompt :foreground yellow :weight bold)
@@ -353,7 +350,7 @@ depending on DISPLAY for keys which are either :foreground or
 
    ;; outline
    (outline-1 :foreground violet)
-   (outline-2 :foreground base8)
+   (outline-2 :foreground cyan)
    (outline-3 :foreground magenta)
    (outline-4 :foreground green)
    (outline-5 :foreground violet)
@@ -602,7 +599,7 @@ depending on DISPLAY for keys which are either :foreground or
    (diredp-deletion-file-name :background base3)
    (diredp-dir-heading :foreground orange)
    (diredp-dir-name :foreground cyan)
-   (diredp-executable-tag :foreground violet)
+   (diredp-executable-tag :foreground yellow)
    (diredp-file-name :foreground base6)
    (diredp-file-suffix :foreground green)
    (diredp-flag-mark :foreground yellow :background blue)
@@ -924,7 +921,7 @@ depending on DISPLAY for keys which are either :foreground or
    (org-date :foreground cyan :underline t)
    (org-date-selected :foreground base2 :background magenta)
    (org-document-info :foreground base5)
-   (org-document-title :foreground base9 :weight bold :height 1.4)
+   (org-document-title :weight bold)
    (org-done :foreground green :weight bold)
    (org-drawer :foreground base5)
    (org-ellipsis :inherit shadow :weight bold)
@@ -967,8 +964,8 @@ depending on DISPLAY for keys which are either :foreground or
    (powerline-inactive2 :foreground base4 :background base2)
 
    ;; rainbow-delimiters
-   (rainbow-delimiters-depth-1-face :foreground base8)
-   (rainbow-delimiters-depth-2-face :foreground base5)
+   (rainbow-delimiters-depth-1-face :foreground base6)
+   (rainbow-delimiters-depth-2-face :foreground cyan)
    (rainbow-delimiters-depth-3-face :foreground orange)
    (rainbow-delimiters-depth-4-face :foreground magenta)
    (rainbow-delimiters-depth-5-face :foreground green)
@@ -1072,7 +1069,8 @@ depending on DISPLAY for keys which are either :foreground or
    (undo-tree-visualizer-current-face :foreground orange)
    (undo-tree-visualizer-active-branch-face :foreground unspecified :weight bold)
    (undo-tree-visualizer-register-face :foreground yellow)
-   (undo-tree-visualizer-unmodified-face :foreground cyan)))
+   (undo-tree-visualizer-unmodified-face :foreground cyan)
+   ))
 
 ;;;###autoload
 (and load-file-name
