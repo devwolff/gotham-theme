@@ -30,7 +30,7 @@ determine the exact padding."
 
 ;;
 (def-doom-theme doom-gotham
-  "A very dark and evil emacs theme. Based on doom-outrun-electric and gotham."
+  "A very dark and evil emacs theme."
 
   ;; name        default   256       16
   ((bg         '("#0c0a20" "#0c0a20" nil           ))
@@ -151,6 +151,8 @@ determine the exact padding."
    (markdown-reference-face :foreground base6)
    ((markdown-bold-face &override)   :foreground fg)
    ((markdown-italic-face &override) :foreground fg-alt)
+   ;; ((markdown-code-face &override) :background (doom-lighten base3 0.05))
+   (markdown-code-face :background base1)
 ;;;; outline <built-in>
    ((outline-1 &override) :foreground deep-blue)
    ((outline-2 &override) :foreground sky-blue)
@@ -160,7 +162,6 @@ determine the exact padding."
    ((outline-6 &override) :foreground (doom-darken teal 0.2))
    ((outline-7 &override) :foreground (doom-darken blue 0.4))
    ((outline-8 &override) :foreground (doom-darken green 0.4))
-   ((markdown-code-face &override) :background (doom-lighten base3 0.05))
 ;;;; org <built-in>
    ((org-block &override) :background base2)
    ((org-block-begin-line &override) :background base2)
