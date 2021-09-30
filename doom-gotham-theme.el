@@ -80,7 +80,7 @@ determine the exact padding."
    (strings        fg-alt)
    (variables      cadet-blue)
    (numbers        magenta)
-   (region         (doom-darken base3 0.4))
+   (region         (doom-darken blood-red 0.4))
    (error          red)
    (warning        yellow)
    (success        green)
