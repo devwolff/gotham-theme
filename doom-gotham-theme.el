@@ -161,8 +161,8 @@ determine the exact padding."
    ((outline-7 &override) :foreground (doom-darken blue 0.4))
    ((outline-8 &override) :foreground (doom-darken green 0.4))
 ;;;; org <built-in>
-   ((org-block &override) :background base0)
-   ((org-block-begin-line &override) :background base0)
+   ((org-block &override) :background base2)
+   ((org-block-begin-line &override) :background base2)
    (org-hide              :foreground hidden)
 ;;;; solaire-mode
    (solaire-mode-line-face
