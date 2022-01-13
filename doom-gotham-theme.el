@@ -1,4 +1,4 @@
-;; doom-gotham.el --- inspired by VS Code Outrun Electric -*- lexical-binding: t; no-byte-compile: t; -*-
+;; doom-gotham.el --- -*- lexical-binding: t; no-byte-compile: t; -*-
 (require 'doom-themes)
 
 ;;
@@ -46,7 +46,6 @@ determine the exact padding."
    (base8      '("#1d1d8a" "#919ad9" "white"       ))
    (fg-alt     '("#7984D1" "#7984D1" "white"       ))
    (fg         '("#f2f3f7" "#f2f3f7" "brightwhite" ))
-
    (grey       '("#546A90" "#546A90" "gray"         ))
    (red        '("#c23127" "#e61f44" "red"          ))
    (orange     '("#cf433e" "#ff9b50" "brightred"    ))
@@ -55,7 +54,7 @@ determine the exact padding."
    (yellow     '("#ffd400" "#ffd400" "yellow"       ))
    (blue       '("#1ea8fc" "#1ea8fc" "brightblue"   ))
    (dark-blue  '("#3761a1" "#3F88AD" "blue"         ))
-   (magenta    '("#fd5800" "#fd5800" "magenta"      ))
+   (magenta    '("#8a00fc" "#8a00fc" "magenta"      ))
    (violet     '("#ee3a8c" "#df85ff" "brightmagenta"))
    (cyan       '("#33859e" "#42c6ff" "brightcyan"   ))
    (dark-cyan  '("#008b8b" "#204052" "cyan"         ))
@@ -80,7 +79,7 @@ determine the exact padding."
    (strings        fg-alt)
    (variables      cadet-blue)
    (numbers        magenta)
-   (region         (doom-darken blood-red 0.4)) ;;blue
+   (region         (doom-darken blood-red 0.4))
    (error          red)
    (warning        yellow)
    (success        green)
@@ -112,7 +111,7 @@ determine the exact padding."
 
   ;;;; Base theme face overrides
   (((font-lock-comment-face &override)
-    :background (if doom-gotham-comment-bg (doom-lighten bg 0.05)))
+    :background (if doom-gotham-comment-bg (doom-lighten bg 0.1)))
    ((font-lock-keyword-face &override) :weight 'bold)
    ((font-lock-constant-face &override) :weight 'bold)
    ((font-lock-function-name-face &override) :foreground functions)
@@ -152,7 +151,7 @@ determine the exact padding."
    ((markdown-bold-face &override)   :foreground fg)
    ((markdown-italic-face &override) :foreground fg-alt)
    ;; ((markdown-code-face &override) :background (doom-lighten base3 0.05))
-   (markdown-code-face :background base1)
+   (markdown-code-face :background base2)
 ;;;; outline <built-in>
    ((outline-1 &override) :foreground deep-blue)
    ((outline-2 &override) :foreground sky-blue)
